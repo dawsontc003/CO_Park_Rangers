@@ -7,11 +7,37 @@
     <!-- Materialize css link -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Colorado National Parks</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"
+          ><i class="material-icons">Parks</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./Black_Canyon.html">Black Canyon</a></li>
+          <li><a href="./Sand_Dunes.html">Great Sand Dunes</a></li>
+          <li><a href="./Mesa_Verde.html">Mesa Verde</a></li>
+          <li>
+            <a href="./Rocky_Mountain.html">Rocky Mountain National Park</a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="./Black_Canyon.html">Black Canyon</a></li>
+          <li><a href="./Sand_Dunes.html">Great Sand Dunes</a></li>
+          <li><a href="./Mesa_Verde.html">Mesa Verde</a></li>
+          <li>
+            <a href="./Rocky_Mountain.html">Rocky Mountain National Park</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="row">
       <div class="col s12">
         <div class="slider">
