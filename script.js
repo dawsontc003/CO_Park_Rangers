@@ -17,4 +17,9 @@ fetch(
   .then(function (data) {
     console.log(data);
     console.log(data.data[0].states);
+
+    $("#main-img-bc").attr("src", data.data[1].images[1].url);
+    $("#main-img-sd").attr("src", data.data[7].images[0].url);
+    $("#main-img-mv").attr("src", data.data[9].images[2].url);
+    $("#main-img-rm").attr("src", data.data[12].images[0].url);
   });
