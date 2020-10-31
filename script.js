@@ -7,6 +7,7 @@ $(document).ready(function () {
   $(".slider").slider();
   $(".button-collapse").sideNav();
 });
+
 var instance = M.Slider.getInstance(elem);
 instance.pause();
 instance.start();
