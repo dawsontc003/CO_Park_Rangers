@@ -3,15 +3,18 @@ $(document).ready(function () {
 
   // fetch for Parks API data
   fetch(
-    "https://developer.nps.gov/api/v1/parks?parkCode=meve&api_key=hRggEhs9bPMZKvgi1LwlI8PflCnBJoFdBnLBCJlP"
+    "https://developer.nps.gov/api/v1/parks?parkCode=blca&api_key=hRggEhs9bPMZKvgi1LwlI8PflCnBJoFdBnLBCJlP"
   )
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
       console.log(data);
+      // Park Info
+      $("#bcInfo").append(data.data[0].description);
+
       // Park Address
-      $("#mvAddress").append(
+      $("#bcAddress").append(
         " " +
           data.data[0].addresses[0].line1 +
           ", " +
@@ -22,27 +25,46 @@ $(document).ready(function () {
           data.data[0].addresses[0].postalCode
       );
       //Park Price
-      $("#mvCost").append(
+      $("#bcCost").append(
         " $" +
-          data.data[0].entranceFees[5].cost +
+          data.data[0].entranceFees[2].cost +
           " - $" +
-          data.data[0].entranceFees[0].cost
+          data.data[0].entranceFees[3].cost
       );
 
       //Park schedule updates
-      $("#mvHours").append(" " + data.data[0].operatingHours[0].description);
+      $("#bcHours").append(" " + data.data[0].operatingHours[0].description);
+
+      //Park weather
+      $("#bcWeather").append(" " + data.data[0].weatherInfo);
 
       //Park Activities
       for (var i = 0; i < 5; i++) {
         var activity = Math.floor(
           Math.random() * data.data[0].activities.length
         );
-        $("#mvActivities").append(
-          "<li>" + "- " + data.data[0].activities[activity].name + "</li>"
+        $("#bcActivities").append(
+          "<li>" +
+            "- " +
+            data.data[0].activities[activity].name +
+            "</li>" +
+            "<br />"
         );
       }
     });
 
-  var userComment = [];
-  $("");
+  var userComment = JSON.parse(localStorage.getItem("bcComments")) || [];
+  $("#bcButton").on("click", function (event) {
+    event.preventDefault();
+    var value = $("#bcComment").val();
+    userComment.push(value);
+    localStorage.setItem("bcComments", JSON.stringify(userComment));
+    $("#bcComment").val("");
+    location.reload();
+  });
+
+  for (var i = 0; i < userComment.length; i++) {
+    $("#bcCommentSection").append(userComment[i] + "<hr />");
+    console.log(userComment[i]);
+  }
 });
