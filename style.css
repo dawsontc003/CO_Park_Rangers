@@ -5,6 +5,7 @@
 }
 .containerInfo {
   text-align: justify;
+  width: 100%;
 }
 #infotitle {
   font-weight: 600;
