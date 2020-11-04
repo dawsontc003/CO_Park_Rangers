@@ -1,3 +1,9 @@
+.nav-wrapper {
+  background-color: #002868;
+}
+.page-footer {
+  background-color: #002868;
+}
 .row {
   text-align: center;
   clear: center;
@@ -15,6 +21,16 @@
 .mobileStack {
   font-style: oblique;
 }
+.parkInfoTitle {
+  text-align: justify;
+  font-style: oblique;
+  font-weight: 600;
+  text-align: center;
+}
+.parkInfo {
+  font-style: oblique;
+}
+
 @media only screen and (max-width: 800px) {
   .containerInfo {
     margin: 10px;
