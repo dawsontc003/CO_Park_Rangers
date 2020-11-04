@@ -1,3 +1,11 @@
 .row {
   text-align: center;
 }
+
+.parkInfo {
+  text-align: left;
+}
+
+#mvAddress {
+  font-weight: bold;
+}

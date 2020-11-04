@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 1</title>
+    <title>Mesa Verde National Park</title>
     <!-- Materialize css link -->
     <link
       rel="stylesheet"
@@ -13,12 +13,13 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Colorado National Parks</a>
+        <a href="./index.html" class="brand-logo">Colorado National Parks</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"
-          ><i class="material-icons">Parks</i></a
+          ><i class="material">Parks</i></a
         >
         <ul class="right hide-on-med-and-down">
           <li><a href="./Black_Canyon.html">Black Canyon</a></li>
@@ -86,15 +87,11 @@
         </div>
       </div>
       <div class="containerInfo">
-        <div class="col s6">
-          ---------------------------Park
-          Info-------------------------------------- Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Aperiam voluptates, laborum officia
-          exercitationem reprehenderit nulla pariatur explicabo eveniet corrupti
-          optio consequatur tempore quod soluta distinctio tenetur assumenda
-          nostrum perspiciatis, nam facilis quidem, non error? Pariatur eos
-          consectetur ex officia sit dolorem distinctio corrupti! Veniam
-          nesciunt corporis accusantium rem minus rerum?
+        <div class="col s6 parkInfo">
+          <h5>Park Info:</h5>
+          <ul>
+            <li id="parkInfoMV mvAddress">Address:</li>
+          </ul>
         </div>
       </div>
       <div class="containerActivities">
@@ -120,7 +117,7 @@
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    <script src="./mesa_verde.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   </body>
 </html>
