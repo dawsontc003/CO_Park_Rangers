@@ -37,12 +37,12 @@
     </div>
   </nav>
   <div class="row">
-    <div class="col s12">
+    <!-- <div class="col s12">
       <div class="slider">
         <ul class="slides">
           <li>
             <img src="" id="main-img-bc" />
-            <!-- random image -->
+            
             <div class="caption center-align">
               <h3>Welcome to Black Canyon of the Gunnison National Park!</h3>
               <h5 class="light grey-text text-lighten-3">
@@ -52,7 +52,7 @@
           </li>
           <li>
             <img src="" id="main-img-sd" />
-            <!-- random image -->
+            
             <div class="caption left-align">
               <h3>Welcome to Great Sand Dunes National Park!</h3>
               <h5 class="light grey-text text-lighten-3">
@@ -62,7 +62,7 @@
           </li>
           <li>
             <img src="" id="main-img-mv" />
-            <!-- random image -->
+            
             <div class="caption right-align">
               <h3>Welcome to Mesa Verde National Park!</h3>
               <h5 class="light grey-text text-lighten-3">
@@ -72,7 +72,7 @@
           </li>
           <li>
             <img src="" id="main-img-rm" />
-            <!-- random image -->
+            
             <div class="caption center-align">
               <h3>Welcome to Rocky Mountain National Park!</h3>
               <h5 class="light grey-text text-lighten-3">
@@ -82,41 +82,53 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="containerInfo">
-      <div class="row">
-        <div class="mobileStack">
-          <div class="col s12 l6 containerInfo">
-            <div id="infotitle">About Colorado National Parks website</div>
-            Colorado National Parks is a website dedicated to promoting the beauty
-            and grace of the limited National Parks in the State of Colorado.
-            Providing just a sample of the breath taking landscapes through
-            photos, Colorado National Parks website can help any Colorado tourist
-            or Colorado native decide which National Park would fit their desires
-            for sight seeing. With each National Park having a dedicated page with
-            details surrounding location, cost, and available activites in each
-            park anyone can plan their visit from the time they arrive to the time
-            they leave. This is extremely beneficial to Colorado tourist because
-            although all four Colorado national Parks have thrills to offer they
-            are spread out through the State of Colorado, and with Colorado
-            spanning across over 104 square miles being able to definitely know
-            what Park you wish to visit and why.
-            <br />
-            <br />
-            The four National Park are Black Canyon of the Gunnison, Great San
-            Dunes, Mesa Verde, and Rocky Mountain. So take the time to review the
-            details we have for you about each park. Our hope is that over time
-            you visit all four! Once you have visited drop back in and let us know
-            about your experience!
-          </div>
-          <div class="containerActivities">
-            <div class="col s6">
-              <img src="./Assets/National-park-map.png" alt="Colorado Map showing National Parks" />
-            </div>
-          </div>
+    </div> -->
+     <media id="video"></media>
+      <div class="containerInfo">
+        <div class="col s12 l6 parkInfo">
+          <h5>Park Info:</h5>
+          <ul>
+            <li id="bcAddress">Address:</li>
+            <li id="bcCost">Prices:</li>
+            <li>Hours: Mon-Sun All Day</li>
+            <li id="bcHours">Updates:</li>
+            <li id="bcURL">
+              Park link:
+              <a href="https://www.nps.gov/meve/index.htm" target="_blank"
+                >https://www.nps.gov/meve/index.htm</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="containerActivities">
+        <div class="col s12 l6">
+          <h5>Park Activities:</h5>
+          <ul id="bcActivities"></ul>
+        </div>
+      </div>
+      <div class="containerComments">
+        <div class="col s12">
+          <hr />
+          <div id="bcCommentSection"></div>
+          <input
+            type="text"
+            name="Comment"
+            id="bcComment"
+            placeholder="Leave a comment..."
+          />
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+          >
+            Submit
+            <i class="material-icons right">send</i>
+          </button>
         </div>
       </div>
     </div>
+  </div>
     <footer class="page-footer">
       <div class="container">
         <div class="row">
