@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,12 +44,12 @@
       </div>
     </nav>
     <div class="row">
-      <div class="col s12">
+      <!-- <div class="col s12">
         <div class="slider">
           <ul class="slides">
             <li>
               <img src="https://lorempixel.com/580/250/nature/1" />
-              <!-- random image -->
+             
               <div class="caption center-align">
                 <h3>This is our big Tagline!</h3>
                 <h5 class="light grey-text text-lighten-3">
@@ -55,7 +59,7 @@
             </li>
             <li>
               <img src="https://lorempixel.com/580/250/nature/2" />
-              <!-- random image -->
+              
               <div class="caption left-align">
                 <h3>Left Aligned Caption</h3>
                 <h5 class="light grey-text text-lighten-3">
@@ -65,7 +69,7 @@
             </li>
             <li>
               <img src="https://lorempixel.com/580/250/nature/3" />
-              <!-- random image -->
+              
               <div class="caption right-align">
                 <h3>Right Aligned Caption</h3>
                 <h5 class="light grey-text text-lighten-3">
@@ -75,7 +79,7 @@
             </li>
             <li>
               <img src="https://lorempixel.com/580/250/nature/4" />
-              <!-- random image -->
+              
               <div class="caption center-align">
                 <h3>This is our big Tagline!</h3>
                 <h5 class="light grey-text text-lighten-3">
@@ -85,32 +89,137 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
+
+      <media id="video"></media>
       <div class="containerInfo">
-        <div class="col s6 parkInfo">
+        <div class="col s12 l6 parkInfo">
           <h5>Park Info:</h5>
           <ul>
-            <li id="parkInfoMV mvAddress">Address:</li>
+            <li id="mvAddress">Address:</li>
+            <li id="mvCost">Prices:</li>
+            <li>Hours: Mon-Sun All Day</li>
+            <li id="mvHours">Updates:</li>
+            <li id="mvURL">
+              Park link:
+              <a href="https://www.nps.gov/meve/index.htm" target="_blank"
+                >https://www.nps.gov/meve/index.htm</a
+              >
+            </li>
           </ul>
         </div>
       </div>
       <div class="containerActivities">
-        <div class="col s6">
-          ----------------------------------------Park
-          Activities------------------- Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Non incidunt esse voluptas sunt, nam aperiam, minus
-          eius doloremque voluptate temporibus architecto corporis magnam libero
-          delectus natus quis amet facere numquam possimus neque similique modi
-          rerum nesciunt. Quos vel nisi veniam perspiciatis? Delectus eius vitae
-          optio blanditiis facilis libero alias nisi?
+        <div class="col s12 l6">
+          <h5>Park Activities:</h5>
+          <ul id="mvActivities"></ul>
         </div>
       </div>
       <div class="containerComments">
         <div class="col s12">
-          --------------------------comments--------------------------------------
+          <hr />
+          <div id="mvCommentSection">
+            <h5>Comments:</h5>
+            <hr />
+          </div>
+          <input
+            type="text"
+            name="Comment"
+            id="mvComment"
+            placeholder="Leave a comment..."
+          />
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+            id="mvButton"
+          >
+            Submit
+            <i class="material-icons right">send</i>
+          </button>
         </div>
       </div>
     </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s812">
+            <h5 class="white-text">Contact Information</h5>
+            <p class="grey-text text-lighten-4">
+              Write or call Tyler Team 3 if you have questions or comments on
+              how to best support the NPS!
+            </p>
+            <i class="material-icons">contact_mail</i>
+            <div class="vcard">
+              <div
+                class="mailing-address"
+                itemscope=""
+                itemtype="http://schema.org/Place"
+              >
+                <div
+                  itemprop="address"
+                  itemscope=""
+                  itemtype="http://schema.org/PostalAddress"
+                >
+                  <p class="adr">
+                    <span itemprop="streetAddress" class="street-address">
+                      Downtown Denver
+                    </span>
+                    <br />
+                    <span
+                      ><span itemprop="addressLocality">Denver, CO</span>,
+                      <span itemprop="addressRegion" class="region">CO</span>
+                      <span itemprop="postalCode" class="postal-code"
+                        >81330
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <i class="material-icons">contact_phone</i>
+            <p><span itemprop="telephone" class="tel"> 970-529-4465</span></p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Parks</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="Black_Canyon.html"
+                  >Black Canyon</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="./Sand_Dunes.html"
+                  >Great Sand Dunes</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="./Mesa_Verde.html"
+                  >Mesa Verde</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="./Rocky_Mountain.html"
+                  >Rocky Mountain</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Copyright | Tyler Team 3
+          <a
+            class="white-text text-lighten-8 right"
+            href="https://www.nps.gov/index.htm"
+            target="_blank"
+            >National Park Service | Home Page</a
+          >
+        </div>
+      </div>
+    </footer>
     <!-- Materialize JavaScript -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
