@@ -1,11 +1,28 @@
 .row {
   text-align: center;
+  clear: center;
+  align-content: center;
 }
-
-.parkInfo {
-  text-align: left;
+.containerInfo {
+  text-align: justify;
+  width: 100%;
 }
-
-#mvAddress {
-  font-weight: bold;
+#infotitle {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+.mobileStack {
+  font-style: oblique;
+}
+@media only screen and (max-width: 800px) {
+  .containerInfo {
+    margin: 10px;
+  }
+  body {
+    align-content: center;
+  }
+  .row {
+    width: 100%;
+  }
 }
