@@ -1,119 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocky Mountain National Park</title>
+    <!-- Materialize css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rocky Mountain National Park</title>
-  <!-- Materialize css link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
-  <link rel="stylesheet" href="./style.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="./index.html" class="brand-logo">Colorado National Parks</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material">Parks</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="./Black_Canyon.html">Black Canyon</a></li>
-        <li><a href="./Sand_Dunes.html">Great Sand Dunes</a></li>
-        <li><a href="./Mesa_Verde.html">Mesa Verde</a></li>
-        <li>
-          <a href="./Rocky_Mountain.html">Rocky Mountain National Park</a>
-        </li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="./Black_Canyon.html">Black Canyon</a></li>
-        <li><a href="./Sand_Dunes.html">Great Sand Dunes</a></li>
-        <li><a href="./Mesa_Verde.html">Mesa Verde</a></li>
-        <li>
-          <a href="./Rocky_Mountain.html">Rocky Mountain National Park</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="row">
-    <div class="col s12">
-      <div class="slider">
-        <ul class="slides">
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="./index.html" class="brand-logo">Colorado National Parks</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"
+          ><i class="material">Parks</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./Black_Canyon.html">Black Canyon</a></li>
+          <li><a href="./Sand_Dunes.html">Great Sand Dunes</a></li>
+          <li><a href="./Mesa_Verde.html">Mesa Verde</a></li>
           <li>
-            <img src="" id="main-img-bc" />
-            <!-- random image -->
-            <div class="caption center-align">
-              <h3>Welcome to Black Canyon of the Gunnison National Park!</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Deep, Steep and Narrow
-              </h5>
-            </div>
+            <a href="./Rocky_Mountain.html">Rocky Mountain National Park</a>
           </li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="./Black_Canyon.html">Black Canyon</a></li>
+          <li><a href="./Sand_Dunes.html">Great Sand Dunes</a></li>
+          <li><a href="./Mesa_Verde.html">Mesa Verde</a></li>
           <li>
-            <img src="" id="main-img-sd" />
-            <!-- random image -->
-            <div class="caption left-align">
-              <h3>Welcome to Great Sand Dunes National Park!</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Dunes Among Diversity
-              </h5>
-            </div>
-          </li>
-          <li>
-            <img src="" id="main-img-mv" />
-            <!-- random image -->
-            <div class="caption right-align">
-              <h3>Welcome to Mesa Verde National Park!</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Preserving Pueblo Heritage
-              </h5>
-            </div>
-          </li>
-          <li>
-            <img src="" id="main-img-rm" />
-            <!-- random image -->
-            <div class="caption center-align">
-              <h3>Welcome to Rocky Mountain National Park!</h3>
-              <h5 class="light grey-text text-lighten-3">
-                Feel Like You’re On Top of the World!
-              </h5>
-            </div>
+            <a href="./Rocky_Mountain.html">Rocky Mountain National Park</a>
           </li>
         </ul>
       </div>
-    </div>
-    <div class="containerInfo">
-      <div class="row">
-        <div class="mobileStack">
-          <div class="col s12 l6 containerInfo">
-            <div id="infotitle">About Colorado National Parks website</div>
-            Colorado National Parks is a website dedicated to promoting the beauty
-            and grace of the limited National Parks in the State of Colorado.
-            Providing just a sample of the breath taking landscapes through
-            photos, Colorado National Parks website can help any Colorado tourist
-            or Colorado native decide which National Park would fit their desires
-            for sight seeing. With each National Park having a dedicated page with
-            details surrounding location, cost, and available activites in each
-            park anyone can plan their visit from the time they arrive to the time
-            they leave. This is extremely beneficial to Colorado tourist because
-            although all four Colorado national Parks have thrills to offer they
-            are spread out through the State of Colorado, and with Colorado
-            spanning across over 104 square miles being able to definitely know
-            what Park you wish to visit and why.
+    </nav>
+    <div class="row">
+      <!-- <div class="col s12">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="https://lorempixel.com/580/250/nature/1" />
+             
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://lorempixel.com/580/250/nature/2" />
+              
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://lorempixel.com/580/250/nature/3" />
+              
+              <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://lorempixel.com/580/250/nature/4" />
+              
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">
+                  Here's our small slogan.
+                </h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+      <media id="video"></media>
+      <div class="containerInfo">
+        <div class="col s12 l6 parkInfo">
+          <h5>Park Info:</h5>
+          <ul>
+             <li id="rmInfo"></li>
             <br />
+            <li id="rmAddress">Address:</li>
             <br />
-            The four National Park are Black Canyon of the Gunnison, Great San
-            Dunes, Mesa Verde, and Rocky Mountain. So take the time to review the
-            details we have for you about each park. Our hope is that over time
-            you visit all four! Once you have visited drop back in and let us know
-            about your experience!
+            <li id="rmCost">Prices:</li>
+            <br />
+            <li>Hours: Mon-Sun All Day</li>
+            <br />
+            <li id=rmUpdates">Updates:</li>
+            <br />
+            <li id="rmWeather">Weather:</li>
+            <br />
+            <li id="rmURL">
+              Park link:
+              <a href="https://www.nps.gov/romo/index.htm" target="_blank"
+                >https://www.nps.gov/romo/index.htm</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="containerActivities">
+        <div class="col s12 l6">
+          <h5>Park Activities:</h5>
+          <ul id="rmActivities"></ul>
+        </div>
+      </div>
+      <div class="containerComments">
+        <div class="col s12">
+          <hr />
+          <div id="rmCommentSection">
+            <h5>Comments:</h5>
+            <hr />
           </div>
-          <div class="containerActivities">
-            <div class="col s6">
-              <img src="./Assets/National-park-map.png" alt="Colorado Map showing National Parks" />
-            </div>
-          </div>
+          <input
+            type="text"
+            name="Comment"
+            id="rmComment"
+            placeholder="Leave a comment..."
+          />
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+            id="rmButton"
+          >
+            Submit
+            <i class="material-icons right">send</i>
+          </button>
         </div>
       </div>
     </div>
@@ -128,16 +159,26 @@
             </p>
             <i class="material-icons">contact_mail</i>
             <div class="vcard">
-              <div class="mailing-address" itemscope="" itemtype="http://schema.org/Place">
-                <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+              <div
+                class="mailing-address"
+                itemscope=""
+                itemtype="http://schema.org/Place"
+              >
+                <div
+                  itemprop="address"
+                  itemscope=""
+                  itemtype="http://schema.org/PostalAddress"
+                >
                   <p class="adr">
                     <span itemprop="streetAddress" class="street-address">
                       Downtown Denver
                     </span>
                     <br />
-                    <span><span itemprop="addressLocality">Denver, CO</span>,
+                    <span
+                      ><span itemprop="addressLocality">Denver, CO</span>,
                       <span itemprop="addressRegion" class="region">CO</span>
-                      <span itemprop="postalCode" class="postal-code">81330
+                      <span itemprop="postalCode" class="postal-code"
+                        >81330
                       </span>
                     </span>
                   </p>
@@ -152,16 +193,24 @@
             <h5 class="white-text">Parks</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3" href="Black_Canyon.html">Black Canyon</a>
+                <a class="grey-text text-lighten-3" href="Black_Canyon.html"
+                  >Black Canyon</a
+                >
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="./Sand_Dunes.html">Great Sand Dunes</a>
+                <a class="grey-text text-lighten-3" href="./Sand_Dunes.html"
+                  >Great Sand Dunes</a
+                >
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="./Mesa_Verde.html">Mesa Verde</a>
+                <a class="grey-text text-lighten-3" href="./Mesa_Verde.html"
+                  >Mesa Verde</a
+                >
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="./Rocky_Mountain.html">Rocky Mountain</a>
+                <a class="grey-text text-lighten-3" href="./Rocky_Mountain.html"
+                  >Rocky Mountain</a
+                >
               </li>
             </ul>
           </div>
@@ -170,16 +219,22 @@
       <div class="footer-copyright">
         <div class="container">
           © 2020 Copyright | Tyler Team 3
-          <a class="white-text text-lighten-8 right" href="https://www.nps.gov/index.htm" target="_blank">National
-            Park Service | Home Page</a>
+          <a
+            class="white-text text-lighten-8 right"
+            href="https://www.nps.gov/index.htm"
+            target="_blank"
+            >National Park Service | Home Page</a
+          >
         </div>
       </div>
     </footer>
     <!-- Materialize JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <script src="./rocky_mountain.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-</body>
-
+  </body>
 </html>

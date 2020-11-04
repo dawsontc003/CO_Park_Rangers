@@ -10,6 +10,9 @@ $(document).ready(function () {
     })
     .then(function (data) {
       console.log(data);
+      // Park Info
+      $("#mvInfo").append(data.data[0].description);
+
       // Park Address
       $("#mvAddress").append(
         " " +
@@ -30,7 +33,10 @@ $(document).ready(function () {
       );
 
       //Park schedule updates
-      $("#mvHours").append(" " + data.data[0].operatingHours[0].description);
+      $("#mvUpdates").append(" " + data.data[0].operatingHours[0].description);
+
+      //Park weather
+      $("#mvWeather").append(" " + data.data[0].weatherInfo);
 
       //Park Activities
       for (var i = 0; i < 5; i++) {
@@ -38,7 +44,11 @@ $(document).ready(function () {
           Math.random() * data.data[0].activities.length
         );
         $("#mvActivities").append(
-          "<li>" + "- " + data.data[0].activities[activity].name + "</li>"
+          "<li>" +
+            "- " +
+            data.data[0].activities[activity].name +
+            "</li>" +
+            "<br />"
         );
       }
     });
