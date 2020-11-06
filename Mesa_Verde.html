@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mesa_verde.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -21,7 +21,7 @@
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="./index.html" class="brand-logo">Colorado National Parks</a>
+        <a href="./index.html" class="brand-logo"> Colorado National Parks</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"
           ><i class="material">Parks</i></a
         >
@@ -44,57 +44,12 @@
       </div>
     </nav>
     <div class="row">
-      <!-- <div class="col s12">
-        <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/1" />
-             
-              <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/2" />
-              
-              <div class="caption left-align">
-                <h3>Left Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/3" />
-              
-              <div class="caption right-align">
-                <h3>Right Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/4" />
-              
-              <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div> -->
-
       <media id="video"></media>
       <div class="containerInfo">
-        <div class="col s12 l6 parkInfo">
-          <h5>Park Info:</h5>
+        <div class="col s12 l9 parkInfo">
+          <br />
+          <img src="./Assets/MesaVerde.jpg" alt="mv logo" width="100px" />
+          <h5 id="parkInfo">Mesa Verde Info:</h5>
           <ul>
             <li id="mvInfo"></li>
             <br />
@@ -118,14 +73,14 @@
         </div>
       </div>
       <div class="containerActivities">
-        <div class="col s12 l6">
-          <h5>Park Activities:</h5>
+        <div class="col s12 l3" id="Activities">
+          <h5 id="parkActivity">Park Activities:</h5>
           <ul id="mvActivities"></ul>
         </div>
       </div>
       <div class="containerComments">
-        <div class="col s12">
-          <hr />
+        <div class="col s6 offset-s3">
+          <br />
           <div id="mvCommentSection">
             <h5>Comments:</h5>
             <hr />

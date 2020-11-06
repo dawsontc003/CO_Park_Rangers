@@ -1,17 +1,33 @@
 .nav-wrapper {
-  background-color: #002868;
+  background-color: #33691e;
 }
 .page-footer {
-  background-color: #002868;
+  background-color: #33691e;
 }
 
-#brand-logo {
-  color: #d50000;
+#rmButton {
+  background-color: #004d40;
 }
 
-li {
-  color: #ffd600;
+#parkInfo {
+  font-weight: bolder;
+  font-style: normal;
 }
+
+#parkActivity {
+  font-weight: bolder;
+  font-style: normal;
+}
+
+#mvInfo {
+  font-style: normal;
+}
+
+#Activities {
+  background-color: #004d40;
+  color: black;
+}
+
 .row {
   text-align: center;
   clear: center;
@@ -24,8 +40,7 @@ li {
 #infotitle {
   font-weight: 600;
   font-size: 24px;
-  font-style: normal;
-  /* text-align: center; */
+  text-align: center;
 }
 .mobileStack {
   font-style: oblique;

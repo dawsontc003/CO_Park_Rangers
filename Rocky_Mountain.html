@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link href="./rocky_mountain.css" rel="stylesheet" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -44,59 +44,14 @@
       </div>
     </nav>
     <div class="row">
-      <!-- <div class="col s12">
-        <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/1" />
-             
-              <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/2" />
-              
-              <div class="caption left-align">
-                <h3>Left Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/3" />
-              
-              <div class="caption right-align">
-                <h3>Right Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/4" />
-              
-              <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">
-                  Here's our small slogan.
-                </h5>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div> -->
-
       <media id="video"></media>
       <div class="containerInfo">
-        <div class="col s12 l6 parkInfo">
-          <h5>Park Info:</h5>
+        <div class="col s12 l9 parkInfo">
+          <br />
+          <img src="./Assets/rocky_mountain.png" alt="rm logo" width="100px" />
+          <h5 id="parkInfo">Rocky Mountain National Park Info:</h5>
           <ul>
-             <li id="rmInfo"></li>
+            <li id="rmInfo"></li>
             <br />
             <li id="rmAddress">Address:</li>
             <br />
@@ -104,7 +59,7 @@
             <br />
             <li>Hours: Mon-Sun All Day</li>
             <br />
-            <li id=rmUpdates">Updates:</li>
+            <li id="rmUpdates">Updates:</li>
             <br />
             <li id="rmWeather">Weather:</li>
             <br />
@@ -118,14 +73,14 @@
         </div>
       </div>
       <div class="containerActivities">
-        <div class="col s12 l6">
-          <h5>Park Activities:</h5>
+        <div class="col s12 l3" id="Activities">
+          <h5 id="parkActivity">Park Activities:</h5>
           <ul id="rmActivities"></ul>
         </div>
       </div>
       <div class="containerComments">
-        <div class="col s12">
-          <hr />
+        <div class="col s6 offset-s3">
+          <br />
           <div id="rmCommentSection">
             <h5>Comments:</h5>
             <hr />
