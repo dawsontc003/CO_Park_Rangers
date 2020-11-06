@@ -30,3 +30,7 @@ The user can launch from the main index HTML page by clicking on park names in t
 # 3rd Party Site | References
 
 3rd party websites used include the U.S. National Park Service Home Page (found in Footer) and each of the four Park's home pages as also supported by the U.S. National Park Service.
+
+![Screen shot 1](https://user-images.githubusercontent.com/69283624/98423673-a30be080-204c-11eb-8703-173b63463cea.PNG)
+
+![Sceen shot 2](https://user-images.githubusercontent.com/69283624/98423681-adc67580-204c-11eb-85a3-4499fc000a61.PNG)
