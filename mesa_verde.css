@@ -1,3 +1,4 @@
+/* Page coloring */
 .nav-wrapper {
   background-color: #bf360c;
 }
@@ -9,6 +10,13 @@
   background-color: #212121;
 }
 
+#Activities {
+  background-color: #212121;
+  color: white;
+}
+/* ----------------------------------- */
+
+/* text editing and alignment */
 #parkInfo {
   font-weight: bolder;
   font-style: normal;
@@ -23,10 +31,15 @@
   font-style: normal;
 }
 
-#Activities {
-  background-color: #212121;
-  color: white;
+.comment {
+  word-wrap: break-word;
+  text-align: left;
 }
+
+#commTitle {
+  text-align: center;
+}
+
 .row {
   text-align: center;
   clear: center;
@@ -65,3 +78,4 @@
     width: 100%;
   }
 }
+/* ----------------------------------------------- */

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var elems = document.querySelectorAll(".slider");
 });
-// Or with jQuery
+// Even handler for nav buttons
 $(document).ready(function () {
   $(".slider").slider();
   $(".button-collapse").sideNav();
@@ -15,12 +15,10 @@ fetch(
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
-    console.log(data.data[0].states);
-
     $("#main-img-sd").attr("src", data.data[7].images[0].url);
   });
 
+//fetch for Unplash API data
 fetch(
   "https://api.unsplash.com/search/photos?page=1&query=landscape&client_id=jrk9GXC5TeN0m9Y_9-R_CqS0848U9z9wZR0OgeU94GM"
 )
