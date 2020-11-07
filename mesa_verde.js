@@ -9,7 +9,6 @@ $(document).ready(function () {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       // Park Info
       $("#mvInfo").append(data.data[0].description);
 
@@ -64,6 +63,8 @@ $(document).ready(function () {
   });
 
   for (var i = 0; i < userComment.length; i++) {
-    $("#mvCommentSection").append(userComment[i] + "<hr />");
+    $("#mvCommentSection")
+      .append(userComment[i] + "<hr />")
+      .attr("class", "comment");
   }
 });

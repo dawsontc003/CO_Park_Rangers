@@ -9,7 +9,6 @@ $(document).ready(function () {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       // Park Info
       $("#bcInfo").append(data.data[0].description);
 
@@ -64,7 +63,8 @@ $(document).ready(function () {
   });
 
   for (var i = 0; i < userComment.length; i++) {
-    $("#bcCommentSection").append(userComment[i] + "<hr />");
-    console.log(userComment[i]);
+    $("#bcCommentSection")
+      .append(userComment[i] + "<hr />")
+      .attr("class", "comment");
   }
 });
